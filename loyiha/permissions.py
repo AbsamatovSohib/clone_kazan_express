@@ -9,7 +9,6 @@ class HasRolePermission(permissions.BasePermission):
                 return True
         return False
 
-
 class HasRolePermissionPost(permissions.BasePermission):
     def has_permission(self, request, view):
         # Check if the user has any of the required roles
